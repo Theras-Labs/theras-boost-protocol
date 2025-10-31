@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <style>
+    .box { fill:#eef3ff; stroke:#6b8afd; stroke-width:2; rx:8; ry:8; }
+    .text { font: 14px sans-serif; fill:#222; }
+    .title { font: bold 18px sans-serif; }
+    .arrow { stroke:#555; stroke-width:2; marker-end:url(#arrow); fill:none; }
+    .note { font: italic 12px sans-serif; fill:#444; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="32" class="title">Loyalty Tokens + TGEM</text>
+
+  <!-- App -->
+  <rect x="30" y="80" width="300" height="120" class="box"/>
+  <text x="50" y="108" class="text">Partner App + SDK</text>
+  <text x="50" y="132" class="text">- Events: login, quest, purchase</text>
+
+  <!-- API/Engine -->
+  <rect x="370" y="60" width="320" height="160" class="box"/>
+  <text x="390" y="88" class="text">Theras API + Rules Engine</text>
+  <text x="390" y="112" class="text">- Validate event</text>
+  <text x="390" y="134" class="text">- Compute rewards</text>
+
+  <!-- Ledgers -->
+  <rect x="740" y="60" width="320" height="160" class="box"/>
+  <text x="760" y="88" class="text">Ledgers</text>
+  <text x="760" y="112" class="text">- TGEM Ledger (credit/debit)</text>
+  <text x="760" y="134" class="text">- Partner Token Treasury (transfer/mint)</text>
+
+  <!-- Redemption -->
+  <rect x="370" y="260" width="320" height="160" class="box"/>
+  <text x="390" y="288" class="text">Redemption Flow</text>
+  <text x="390" y="312" class="text">- Check catalog & eligibility</text>
+  <text x="390" y="334" class="text">- Debit TGEM</text>
+  <text x="390" y="356" class="text">- Optional: burn/transfer Partner Token</text>
+
+  <!-- Arrows Earn -->
+  <path d="M330,120 C360,120 360,120 370,120" class="arrow"/>
+  <text x="300" y="110" class="text">POST /events</text>
+
+  <path d="M690,120 C710,120 730,120 740,120" class="arrow"/>
+  <text x="650" y="108" class="text">Award TGEM + PTKN</text>
+
+  <!-- Arrows App Update -->
+  <path d="M740,140 C560,220 340,210 180,160" class="arrow"/>
+  <text x="240" y="210" class="text">Balances update</text>
+
+  <!-- Arrows Redeem -->
+  <path d="M190,200 C360,240 360,240 370,240" class="arrow"/>
+  <text x="205" y="228" class="text">Redeem request</text>
+
+  <path d="M530,340 C700,340 830,320 880,220" class="arrow"/>
+  <text x="700" y="330" class="text">Debit TGEM</text>
+
+  <path d="M530,360 C740,400 900,380 1020,220" class="arrow"/>
+  <text x="760" y="392" class="text">PTKN burn/transfer (optional)</text>
+
+  <text x="30" y="430" class="note">Notes: Partner token issuance path depends on partner configuration (mint vs transfer). TGEM is canonical loyalty across ecosystem.</text>
+</svg>

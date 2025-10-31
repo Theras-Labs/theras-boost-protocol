@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <style>
+    .box { fill:#eef3ff; stroke:#6b8afd; stroke-width:2; rx:8; ry:8; }
+    .dash { fill:#fef8e7; stroke:#e2b54a; stroke-width:2; rx:8; ry:8; }
+    .text { font: 14px sans-serif; fill:#222; }
+    .title { font: bold 18px sans-serif; }
+    .arrow { stroke:#555; stroke-width:2; marker-end:url(#arrow); fill:none; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="32" class="title">TGEM Issuance & Redemption Flow</text>
+
+  <!-- Dashboard -->
+  <rect x="30" y="70" width="280" height="140" class="dash"/>
+  <text x="50" y="98" class="text">Theras Dashboard</text>
+  <text x="50" y="122" class="text">- Create Project</text>
+  <text x="50" y="144" class="text">- Earn Rules & Rates</text>
+  <text x="50" y="166" class="text">- Catalog & Webhooks</text>
+
+  <!-- App + SDK -->
+  <rect x="30" y="260" width="280" height="140" class="box"/>
+  <text x="50" y="288" class="text">Partner App + Theras SDK/UI</text>
+  <text x="50" y="312" class="text">- User Actions (login, quest)</text>
+  <text x="50" y="334" class="text">- Redeem Requests</text>
+
+  <!-- Backend cluster -->
+  <rect x="380" y="70" width="660" height="480" class="box"/>
+  <text x="400" y="98" class="text">Theras Protocol Backend</text>
+
+  <rect x="410" y="120" width="220" height="80" class="box"/>
+  <text x="425" y="148" class="text">API Gateway</text>
+  <text x="425" y="170" class="text">- Auth, Rate Limit</text>
+
+  <rect x="410" y="220" width="220" height="100" class="box"/>
+  <text x="425" y="248" class="text">Loyalty Rules Engine</text>
+  <text x="425" y="270" class="text">- Evaluate Events</text>
+  <text x="425" y="292" class="text">- Compute Rewards</text>
+
+  <rect x="660" y="220" width="180" height="100" class="box"/>
+  <text x="675" y="248" class="text">TGEM Ledger</text>
+  <text x="675" y="270" class="text">- Credit/Debit</text>
+
+  <rect x="870" y="220" width="150" height="100" class="box"/>
+  <text x="885" y="248" class="text">Catalog</text>
+  <text x="885" y="270" class="text">- Eligibility</text>
+
+  <rect x="660" y="120" width="360" height="80" class="box"/>
+  <text x="675" y="148" class="text">Analytics & Billing</text>
+
+  <!-- Arrows: Earn path -->
+  <path d="M310,290 C350,290 350,160 410,160" class="arrow"/>
+  <text x="320" y="205" class="text">POST /events</text>
+
+  <path d="M630,270 C650,270 650,270 660,270" class="arrow"/>
+  <text x="595" y="260" class="text">Issue TGEM</text>
+
+  <path d="M660,270 C590,350 500,390 310,330" class="arrow"/>
+  <text x="440" y="360" class="text">Balances, streaks</text>
+
+  <!-- Arrows: Redemption path -->
+  <path d="M310,340 C400,370 420,370 410,270" class="arrow"/>
+  <text x="330" y="360" class="text">POST /redeem</text>
+
+  <path d="M520,270 C600,270 860,270 870,270" class="arrow"/>
+  <text x="705" y="260" class="text">Check item</text>
+
+  <path d="M840,270 C820,270 760,270 740,270" class="arrow"/>
+  <text x="760" y="245" class="text">Approve</text>
+
+  <path d="M740,270 C600,430 460,430 310,310" class="arrow"/>
+  <text x="520" y="420" class="text">Debit TGEM → Result</text>
+</svg>

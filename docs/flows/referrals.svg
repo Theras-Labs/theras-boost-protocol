@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <style>
+    .box { fill:#eef3ff; stroke:#6b8afd; stroke-width:2; rx:8; ry:8; }
+    .text { font: 14px sans-serif; fill:#222; }
+    .title { font: bold 18px sans-serif; }
+    .arrow { stroke:#555; stroke-width:2; marker-end:url(#arrow); fill:none; }
+    .note { font: italic 12px sans-serif; fill:#444; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="32" class="title">Referral Flow (Referrer ↔ Referee)</text>
+
+  <!-- Campaign setup -->
+  <rect x="30" y="70" width="320" height="140" class="box"/>
+  <text x="50" y="98" class="text">Dashboard: Referral Campaign</text>
+  <text x="50" y="122" class="text">- Create campaign</text>
+  <text x="50" y="144" class="text">- Rewards: TGEM + PTKN</text>
+
+  <!-- Referrer -->
+  <rect x="30" y="260" width="300" height="120" class="box"/>
+  <text x="50" y="288" class="text">Referrer</text>
+  <text x="50" y="312" class="text">- Shares link/code</text>
+
+  <!-- Referee -->
+  <rect x="380" y="260" width="300" height="120" class="box"/>
+  <text x="400" y="288" class="text">Referee</text>
+  <text x="400" y="312" class="text">- Signs up / qualifies</text>
+
+  <!-- Backend -->
+  <rect x="730" y="220" width="340" height="200" class="box"/>
+  <text x="750" y="248" class="text">Theras Backend</text>
+  <text x="750" y="272" class="text">- Validate & dedupe</text>
+  <text x="750" y="294" class="text">- Anti-fraud checks</text>
+  <text x="750" y="316" class="text">- Award TGEM + PTKN</text>
+
+  <!-- Arrows -->
+  <path d="M190,320 C230,320 350,320 380,320" class="arrow"/>
+  <text x="220" y="310" class="text">Referral link</text>
+
+  <path d="M530,320 C640,320 730,320 730,320" class="arrow"/>
+  <text x="560" y="308" class="text">Event: signup/qualify</text>
+
+  <path d="M900,320 C900,360 700,360 640,320" class="arrow"/>
+  <text x="690" y="370" class="text">Award to Referrer</text>
+
+  <path d="M900,320 C900,280 560,280 530,320" class="arrow"/>
+  <text x="720" y="270" class="text">Award to Referee</text>
+
+  <text x="30" y="470" class="note">Notes: Enforce idempotency, cool-downs, and eligibility. Rewards can be split between referrer and referee in TGEM and/or partner token.</text>
+</svg>

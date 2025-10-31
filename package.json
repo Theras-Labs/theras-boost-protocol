@@ -1,0 +1,8 @@
+{
+  "name": "theras-monorepo",
+  "private": true,
+  "packageManager": "bun",
+  "workspaces": [
+    "packages/*"
+  ]
+}

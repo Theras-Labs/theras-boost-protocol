@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+  <style>
+    .box { fill:#eef3ff; stroke:#6b8afd; stroke-width:2; rx:8; ry:8; }
+    .text { font: 14px sans-serif; fill:#222; }
+    .title { font: bold 18px sans-serif; }
+    .arrow { stroke:#555; stroke-width:2; marker-end:url(#arrow); fill:none; }
+    .note { font: italic 12px sans-serif; fill:#444; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="32" class="title">Cross–dApp Ecosystem (Earn in A, Redeem in B)</text>
+
+  <!-- DApp A -->
+  <rect x="40" y="90" width="300" height="140" class="box"/>
+  <text x="60" y="118" class="text">DApp A + SDK</text>
+  <text x="60" y="142" class="text">- User completes quest</text>
+
+  <!-- Theras -->
+  <rect x="400" y="60" width="380" height="190" class="box"/>
+  <text x="420" y="88" class="text">Theras Protocol</text>
+  <text x="420" y="112" class="text">- API Gateway</text>
+  <text x="420" y="134" class="text">- Loyalty Engine</text>
+  <text x="420" y="156" class="text">- TGEM Ledger (global)</text>
+
+  <!-- DApp B -->
+  <rect x="820" y="90" width="300" height="140" class="box"/>
+  <text x="840" y="118" class="text">DApp B + SDK</text>
+  <text x="840" y="142" class="text">- User redeems item</text>
+
+  <!-- Connectors -->
+  <rect x="400" y="290" width="380" height="140" class="box"/>
+  <text x="420" y="318" class="text">Ecosystem Connectors</text>
+  <text x="420" y="342" class="text">- Webhooks / Events</text>
+  <text x="420" y="364" class="text">- On-chain watchers / indexers</text>
+
+  <!-- Earn in A path -->
+  <path d="M340,160 C380,160 400,140 400,140" class="arrow"/>
+  <text x="320" y="150" class="text">POST /events</text>
+
+  <path d="M580,160 C600,160 600,160 580,200" class="arrow"/>
+  <text x="560" y="190" class="text">Credit TGEM</text>
+
+  <!-- Balance to A -->
+  <path d="M580,200 C460,240 240,240 130,190" class="arrow"/>
+  <text x="260" y="250" class="text">Balance update</text>
+
+  <!-- Redeem in B path -->
+  <path d="M970,160 C900,160 820,160 780,140" class="arrow"/>
+  <text x="820" y="130" class="text">POST /redeem</text>
+
+  <path d="M740,140 C720,160 620,160 580,160" class="arrow"/>
+  <text x="640" y="150" class="text">Eligibility</text>
+
+  <path d="M580,160 C620,220 820,220 970,190" class="arrow"/>
+  <text x="760" y="230" class="text">Debit TGEM → Success</text>
+
+  <!-- Signals -->
+  <path d="M780,340 C860,360 980,360 1040,260" class="arrow"/>
+  <text x="890" y="352" class="text">Webhook (fulfillment)</text>
+
+  <path d="M400,360 C300,360 200,300 180,240" class="arrow"/>
+  <text x="200" y="330" class="text">Emit events / on-chain signals</text>
+
+  <text x="40" y="470" class="note">Notes: TGEM is global across dApps. Users earn in A and redeem in B. Connectors propagate events and allow external fulfillment.</text>
+</svg>
