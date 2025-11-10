@@ -62,15 +62,15 @@
   <text x="440" y="360" class="text">Balances, streaks</text>
 
   <!-- Arrows: Redemption path -->
-  <path d="M310,340 C400,370 420,370 410,270" class="arrow"/>
-  <text x="330" y="360" class="text">POST /redeem</text>
+  <path d="M310,340 C350,360 380,320 410,290" class="arrow"/>
+  <text x="320" y="365" class="text">POST /redeem</text>
 
-  <path d="M520,270 C600,270 860,270 870,270" class="arrow"/>
-  <text x="705" y="260" class="text">Check item</text>
+  <path d="M630,270 C720,270 850,270 870,270" class="arrow"/>
+  <text x="720" y="260" class="text">Check item</text>
 
   <path d="M840,270 C820,270 760,270 740,270" class="arrow"/>
-  <text x="760" y="245" class="text">Approve</text>
+  <text x="765" y="260" class="text">Approve</text>
 
-  <path d="M740,270 C600,430 460,430 310,310" class="arrow"/>
-  <text x="520" y="420" class="text">Debit TGEM → Result</text>
+  <path d="M660,290 C520,380 420,380 310,350" class="arrow"/>
+  <text x="440" y="395" class="text">Debit TGEM → Result</text>
 </svg>

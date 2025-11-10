@@ -39,25 +39,25 @@
   <text x="390" y="356" class="text">- Optional: burn/transfer Partner Token</text>
 
   <!-- Arrows Earn -->
-  <path d="M330,120 C360,120 360,120 370,120" class="arrow"/>
-  <text x="300" y="110" class="text">POST /events</text>
+  <path d="M330,120 C345,120 355,120 370,120" class="arrow"/>
+  <text x="335" y="110" class="text">POST /events</text>
 
-  <path d="M690,120 C710,120 730,120 740,120" class="arrow"/>
-  <text x="650" y="108" class="text">Award TGEM + PTKN</text>
+  <path d="M690,120 C710,120 725,120 740,120" class="arrow"/>
+  <text x="695" y="110" class="text">Award TGEM + PTKN</text>
 
   <!-- Arrows App Update -->
-  <path d="M740,140 C560,220 340,210 180,160" class="arrow"/>
-  <text x="240" y="210" class="text">Balances update</text>
+  <path d="M740,150 C560,200 340,190 180,180" class="arrow"/>
+  <text x="380" y="210" class="text">Balances update</text>
 
   <!-- Arrows Redeem -->
-  <path d="M190,200 C360,240 360,240 370,240" class="arrow"/>
-  <text x="205" y="228" class="text">Redeem request</text>
+  <path d="M180,200 C270,240 320,260 370,280" class="arrow"/>
+  <text x="190" y="250" class="text">Redeem request</text>
 
-  <path d="M530,340 C700,340 830,320 880,220" class="arrow"/>
-  <text x="700" y="330" class="text">Debit TGEM</text>
+  <path d="M690,320 C780,300 840,260 880,220" class="arrow"/>
+  <text x="760" y="290" class="text">Debit TGEM</text>
 
-  <path d="M530,360 C740,400 900,380 1020,220" class="arrow"/>
-  <text x="760" y="392" class="text">PTKN burn/transfer (optional)</text>
+  <path d="M690,360 C820,380 920,340 1020,220" class="arrow"/>
+  <text x="820" y="375" class="text">PTKN burn/transfer (optional)</text>
 
   <text x="30" y="430" class="note">Notes: Partner token issuance path depends on partner configuration (mint vs transfer). TGEM is canonical loyalty across ecosystem.</text>
 </svg>

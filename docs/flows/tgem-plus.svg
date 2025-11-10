@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <style>
+    .box { fill:#eef3ff; stroke:#6b8afd; stroke-width:2; rx:8; ry:8; }
+    .reflect { fill:#e8f5e9; stroke:#4caf50; stroke-width:2; rx:8; ry:8; }
+    .vault { fill:#fff3e0; stroke:#ff9800; stroke-width:2; rx:8; ry:8; }
+    .text { font: 14px sans-serif; fill:#222; }
+    .title { font: bold 18px sans-serif; }
+    .subtitle { font: bold 14px sans-serif; fill:#555; }
+    .arrow { stroke:#555; stroke-width:2; marker-end:url(#arrow); fill:none; }
+    .yield-arrow { stroke:#4caf50; stroke-width:2; marker-end:url(#yield-arrow); fill:none; stroke-dasharray:5,5; }
+    .note { font: italic 12px sans-serif; fill:#444; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+    <marker id="yield-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4caf50"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="32" class="title">TGEM+ Flow (Reflect.money Integration)</text>
+  <text x="20" y="52" class="subtitle">Yield-Bearing Loyalty Token with DeFi Backing</text>
+
+  <!-- User Actions -->
+  <rect x="30" y="90" width="280" height="140" class="box"/>
+  <text x="50" y="118" class="text">User Actions</text>
+  <text x="50" y="142" class="text">- Daily Login</text>
+  <text x="50" y="164" class="text">- Complete Quests</text>
+  <text x="50" y="186" class="text">- Make Purchases</text>
+  <text x="50" y="208" class="text">- Referrals</text>
+
+  <!-- Theras Backend -->
+  <rect x="360" y="90" width="280" height="140" class="box"/>
+  <text x="380" y="118" class="text">Theras Backend</text>
+  <text x="380" y="142" class="text">- Validate Events</text>
+  <text x="380" y="164" class="text">- Compute Rewards</text>
+  <text x="380" y="186" class="text">- Deposit USDC Collateral</text>
+  <text x="380" y="208" class="text">- Trigger TGEM+ Mint</text>
+
+  <!-- Reflect Protocol -->
+  <rect x="690" y="90" width="280" height="140" class="reflect"/>
+  <text x="710" y="118" class="text">Reflect Protocol</text>
+  <text x="710" y="142" class="text">- Receive USDC Collateral</text>
+  <text x="710" y="164" class="text">- Execute DeFi Strategies</text>
+  <text x="710" y="186" class="text">- Generate Yield (5-15% APY)</text>
+  <text x="710" y="208" class="text">- Price Appreciation</text>
+
+  <!-- TGEM+ Vault -->
+  <rect x="1020" y="90" width="150" height="140" class="vault"/>
+  <text x="1040" y="118" class="text">TGEM+ Vault</text>
+  <text x="1040" y="142" class="text">- USDC Pool</text>
+  <text x="1040" y="164" class="text">- Collateral</text>
+  <text x="1040" y="186" class="text">- 1:1 Backing</text>
+
+  <!-- User Wallet -->
+  <rect x="30" y="280" width="280" height="160" class="box"/>
+  <text x="50" y="308" class="text">User Wallet (SPL Token)</text>
+  <text x="50" y="332" class="text">- TGEM+ Balance</text>
+  <text x="50" y="354" class="text">- Automatic Yield Accrual</text>
+  <text x="50" y="376" class="text">- Transferable</text>
+  <text x="50" y="398" class="text">- DeFi Composable</text>
+  <text x="50" y="420" class="text">✨ Earn by Holding!</text>
+
+  <!-- Redemption Options -->
+  <rect x="360" y="280" width="280" height="160" class="box"/>
+  <text x="380" y="308" class="text">Redemption Options</text>
+  <text x="380" y="332" class="text">1. Catalog Items</text>
+  <text x="400" y="352" class="text">→ Burn TGEM+</text>
+  <text x="400" y="370" class="text">→ Receive Item</text>
+  <text x="380" y="390" class="text">2. Stablecoin Exit</text>
+  <text x="400" y="408" class="text">→ Burn TGEM+</text>
+  <text x="400" y="426" class="text">→ Receive USDC (1:1)</text>
+
+  <!-- DeFi Ecosystem -->
+  <rect x="690" y="280" width="280" height="160" class="reflect"/>
+  <text x="710" y="308" class="text">DeFi Composability</text>
+  <text x="710" y="332" class="text">- Trade on DEXs</text>
+  <text x="710" y="354" class="text">- Provide Liquidity</text>
+  <text x="710" y="376" class="text">- Use as Collateral</text>
+  <text x="710" y="398" class="text">- Stake for Extra Rewards</text>
+  <text x="710" y="420" class="text">- Cross-Protocol Integration</text>
+
+  <!-- Arrows: Earn Flow -->
+  <path d="M310,160 C330,160 340,160 360,160" class="arrow"/>
+  <text x="315" y="150" class="text">Events</text>
+
+  <path d="M640,160 C660,160 680,160 690,160" class="arrow"/>
+  <text x="645" y="150" class="text">Collateral</text>
+
+  <path d="M970,160 C990,160 1010,160 1020,160" class="arrow"/>
+  <text x="975" y="150" class="text">Deposit</text>
+
+  <!-- Arrows: Mint Flow -->
+  <path d="M500,230 C500,250 170,250 170,280" class="arrow"/>
+  <text x="280" y="260" class="text">Mint TGEM+</text>
+
+  <!-- Arrows: Yield Flow (dashed) -->
+  <path d="M830,230 C830,250 170,250 170,280" class="yield-arrow"/>
+  <text x="450" y="270" class="text">Passive Yield 💰</text>
+
+  <!-- Arrows: Redemption Flow -->
+  <path d="M310,360 C330,360 340,360 360,360" class="arrow"/>
+  <text x="315" y="350" class="text">Redeem</text>
+
+  <!-- Arrows: DeFi Flow -->
+  <path d="M310,400 C480,420 560,420 690,400" class="arrow"/>
+  <text x="450" y="440" class="text">Use in DeFi</text>
+
+  <!-- Arrows: Vault to Reflect (continuous) -->
+  <path d="M1020,200 C1000,200 990,200 970,200" class="yield-arrow"/>
+  <text x="975" y="190" class="text">Strategies</text>
+
+  <!-- Key Benefits Box -->
+  <rect x="30" y="490" width="540" height="180" class="reflect"/>
+  <text x="50" y="518" class="subtitle">Key Benefits of TGEM+</text>
+  <text x="50" y="545" class="text">✓ Earn passive yield just by holding (5-15% APY)</text>
+  <text x="50" y="567" class="text">✓ Backed 1:1 by USDC (non-custodial, verifiable)</text>
+  <text x="50" y="589" class="text">✓ Redeem for catalog items OR cash out to stablecoin</text>
+  <text x="50" y="611" class="text">✓ Fully composable with DeFi protocols</text>
+  <text x="50" y="633" class="text">✓ No lockup period - liquid and transferable</text>
+  <text x="50" y="655" class="text">✓ Transparent on-chain collateralization</text>
+
+  <!-- Technical Details Box -->
+  <rect x="620" y="490" width="550" height="180" class="vault"/>
+  <text x="640" y="518" class="subtitle">Technical Implementation</text>
+  <text x="640" y="545" class="text">• SPL Token on Solana blockchain</text>
+  <text x="640" y="567" class="text">• Reflect.money protocol integration</text>
+  <text x="640" y="589" class="text">• Delta-neutral DeFi yield strategies</text>
+  <text x="640" y="611" class="text">• Automated rebalancing and compounding</text>
+  <text x="640" y="633" class="text">• Smart contract audited and insured</text>
+  <text x="640" y="655" class="text">• Real-time price oracle and yield tracking</text>
+</svg>

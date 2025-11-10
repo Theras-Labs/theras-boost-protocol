@@ -38,17 +38,17 @@
   <text x="750" y="316" class="text">- Award TGEM + PTKN</text>
 
   <!-- Arrows -->
-  <path d="M190,320 C230,320 350,320 380,320" class="arrow"/>
-  <text x="220" y="310" class="text">Referral link</text>
+  <path d="M330,320 C350,320 360,320 380,320" class="arrow"/>
+  <text x="340" y="310" class="text">Referral link</text>
 
-  <path d="M530,320 C640,320 730,320 730,320" class="arrow"/>
-  <text x="560" y="308" class="text">Event: signup/qualify</text>
+  <path d="M680,320 C700,320 710,320 730,320" class="arrow"/>
+  <text x="685" y="310" class="text">Event: signup/qualify</text>
 
-  <path d="M900,320 C900,360 700,360 640,320" class="arrow"/>
-  <text x="690" y="370" class="text">Award to Referrer</text>
+  <path d="M900,340 C900,380 400,380 330,350" class="arrow"/>
+  <text x="580" y="395" class="text">Award to Referrer</text>
 
-  <path d="M900,320 C900,280 560,280 530,320" class="arrow"/>
-  <text x="720" y="270" class="text">Award to Referee</text>
+  <path d="M900,300 C900,260 560,260 530,280" class="arrow"/>
+  <text x="680" y="250" class="text">Award to Referee</text>
 
   <text x="30" y="470" class="note">Notes: Enforce idempotency, cool-downs, and eligibility. Rewards can be split between referrer and referee in TGEM and/or partner token.</text>
 </svg>
