@@ -1,0 +1,12 @@
+[package]
+name = "tgem_plus"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tgem_plus"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"

@@ -1,6 +1,17 @@
 [programs.localnet]
-theras_protocol = "Thrs1111111111111111111111111111111111111111"
+theras_protocol = "BQm8t9GpXgyX1atwWGaTpYvjeyGZNcwTczJDauSM3f1v"
+tgem_plus = "waBySt7ASB6QkHK7X8zjoeAsYRWC5zgnbJwsA9vNKcGL"
+
+[programs.devnet]
+theras_protocol = "BQm8t9GpXgyX1atwWGaTpYvjeyGZNcwTczJDauSM3f1v"
+tgem_plus = "waBySt7ASB6QkHK7X8zjoeAsYRWC5zgnbJwsA9vNKcGL"
+
+[registry]
+url = "https://api.apr.dev"
 
 [provider]
 cluster = "localnet"
 wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

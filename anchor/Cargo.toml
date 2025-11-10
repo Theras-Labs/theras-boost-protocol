@@ -1,5 +1,6 @@
 [workspace]
 members = [
-    "programs/theras_protocol"
+    "programs/theras_protocol",
+    "programs/tgem_plus"
 ]
 resolver = "2"
